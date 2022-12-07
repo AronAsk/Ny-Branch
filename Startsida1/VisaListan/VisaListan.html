@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="VisaListan.css" />
+    <title>Flexbox Crash Course</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Körsmart</div>
+        <ul class="nav">
+          <div class="dropdown">
+            <button class="dropknapp"><img src="/Startsida1/images/hamburger.png" alt="hamburger"></button>
+            <div class="content">
+                <a href="/Startsida1/startsida.html">Hem</a>
+                <a href="#">Boka</a>
+                <a href="#">Om</a>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Listan</h1>
+          
+          <table id="show">
+          <thead>
+            <tr>
+                <th>Resa från</th>
+                <th>Resa till</th>
+                <th>Datum</th>
+                <th>Namn</th>
+                <th>Efternamn</th>
+                <th>Telefonnummer</th>
+                <th>Antal lediga platser</th>
+                <th>Djurfri</th>
+                <th>Barnfri</th>
+                <th>Pauser på resa</th>
+                <th>Övrig info</th>
+            </tr>
+        </thead>
+      </table>
+    
+          <script>
+            window.onload = function() { // on server load, takes localinfo
+            
+                ShowDataTable();
+              };
+              </script>
+
+              <table id="show">
+    
+</table>
+            
+            </script>
+
+
+        </div>
+       
+      </div>
+    </header>
+
+    <section class="boxes">
+      <div class="container">
+        <div class="box">
+          <h2><i class="fas fa-car"></i> Erbjud plats</h2>
+          <p>
+            Skriv in er här om ni har bil och vill ta med personer för att få dra ner kostnaderna.
+          </p>
+        </div>
+        
+        <div class="box">
+          <h2><i class="fa fa-envelope"></i>Boka Samåkning</h2>
+          <p>
+           Skriv in från vart till vart, samt övriga detaljer för att kunna boka in lämplig resa.
+          </p>
+        </div>
+        
+        
+      </div>
+    </section>
+    <script src="/Startsida1/script.js"></script>
+    <script src="/saves form data.js"></script>
+  </body>
+</html>

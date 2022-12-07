@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/ErbjudPlatts/form.css" />
+    <title>Flexbox Crash Course</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Körsmart</div>
+        <ul class="nav">
+          <div class="dropdown">
+            <button class="dropknapp"><img src="/Startsida1/images/hamburger.png" alt="hamburger"></button>
+            <div class="content">
+                <a href="/Startsida1/startsida.html">Hem</a>
+                <a href="#">Boka</a>
+                <a href="#">Om</a>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div>
+          <!-- in här -->
+        
+         
+  
+    
+    <div class="containernic">
+            <form id="Form1">
+            <h3>Erbjud Plats</h3>
+            <input type="text" id="fran" placeholder="Från">
+            <input type="text" id="till" placeholder="Till">
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <p></p>
+
+             
+            <div class="btn1-box">
+            <input type="text" id="name"placeholder="Namn"requierd>
+            <input type="text" id="lastname"placeholder="Efternamn"requierd>
+            <input type="text" id="number"placeholder="Telefonnummer"requierd> 
+     
+        </div>
+        <input type="text" id="platser" placeholder="Hur många lediga platser?">
+        
+        
+        <label for="djur" style="display:block;
+         margin: 0.5rem 0; ">
+        <input type="checkbox" id="djur1" name="box" value="" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left">Skall bilen vara djurfri?</label>
+        <input type="checkbox" id="barn1" name="box" value="" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left">Skall bilen vara barnfri?</label>
+        <label for="djur" style="display:block;
+        margin: 0.5rem 0; ">
+        <input type="checkbox" id="rast" name="box" value="" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left" >Möjlighet till pisspause under färd?</label>
+        <input type="text" id="info" placeholder="Övrig info">
+
+            <div class="btn-box">
+              <input type="submit" name="button" id="btn" value="Skapa" onclick="AddRow()">
+               
+                
+                      
+    </div>
+        </form>
+     
+        <div class="step-row">
+            <div id="progress"></div>
+            
+            
+
+            </div>
+        
+        
+    <!-- nic slut -->
+        </div>
+       
+      </div>
+    </header>
+
+    <section class="boxes">
+      <div class="container">
+        <div class="box">
+          <h2><i class="fas fa-car"></i> Erbjud plats</h2>
+          <p>
+            Skriv in er här om ni har bil och vill ta med personer för att få dra ner kostnaderna.
+          </p>
+        </div>
+        
+        <div class="box">
+          <h2><i class="fa fa-envelope"></i>Boka Samåkning</h2>
+          <p>
+           Skriv in från vart till vart, samt övriga detaljer för att kunna boka in lämplig resa.
+          </p>
+        </div>
+        
+        
+      </div>
+    </section>
+    <script src="/Startsida1/script.js"></script>
+    <script src="/saves form data.js"></script>
+  </body>
+</html>
