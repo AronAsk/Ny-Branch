@@ -10,7 +10,8 @@ function AddRow(){
     resInfo.efternamn = document.getElementById("lastname").value;
     resInfo.tele = document.getElementById("number").value;
     resInfo.antalledigaplatser = document.getElementById("platser").value;
-    resInfo.djurfri = document.getElementById("djur1").value;
+    // resInfo.djurfri = 
+    if (document.getElementById("djur1").value != '') { resInfo.djurfri = 'Ja';} 
     resInfo.barnfri = document.getElementById("barn1").value;
     resInfo.pauser = document.getElementById("rast").value;
     resInfo.info = document.getElementById("info").value;
@@ -22,6 +23,8 @@ function AddRow(){
     localStorage.setItem('ResInfo',JSON.stringify(old_data));  // save the new json data
 
     location.reload(); //reload page
+
+    
 }
 
 class ResInfo {
