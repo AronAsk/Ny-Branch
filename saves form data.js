@@ -11,9 +11,30 @@ function AddRow(){
     resInfo.tele = document.getElementById("number").value;
     resInfo.antalledigaplatser = document.getElementById("platser").value;
     // resInfo.djurfri = 
-    if (document.getElementById("djur1").value != '') { resInfo.djurfri = 'Ja';} 
-    resInfo.barnfri = document.getElementById("barn1").value;
-    resInfo.pauser = document.getElementById("rast").value;
+    if( document.getElementById("djur1").checked){
+        document.getElementById("djur1").value="ja";
+       }
+       else{
+           document.getElementById("djur1").value="nej";
+       }
+       resInfo.djurfri = document.getElementById("djur1").value;
+   
+       if( document.getElementById("barn1").checked){
+           document.getElementById("barn1").value="ja"
+          }
+          else{
+              document.getElementById("barn1").value="nej"
+          }
+       resInfo.barnfri = document.getElementById("barn1").value;
+   
+       if( document.getElementById("rast").checked){
+           document.getElementById("rast").value="ja"
+          }
+          else{
+              document.getElementById("rast").value="nej"
+          }
+          resInfo.pauser = document.getElementById("rast").value;
+   
     resInfo.info = document.getElementById("info").value;
     if(localStorage.getItem('ResInfo') == null){
         localStorage.setItem('ResInfo', '[]');

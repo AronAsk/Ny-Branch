@@ -77,7 +77,7 @@ background: linear-gradient(to right, lightblue, hsl(143, 98%, 67%));
   max-height: 65px;
   border: none;
   font-size: 16px;
-  background-color: hwb(143 35% 1%);
+  background-color: rgba(0, 0, 0, 0);
 }
 .line{
   width: 25px;
